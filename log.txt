@@ -1,63 +1,30 @@
 failed to get console mode for stdout: The handle is invalid.
 item-app-1  | 
 item-db-1   | 2024-02-26T06:19:23.447+0000 I CONTROL  [initandlisten] MongoDB starting : pid=1 port=27017 dbpath=/data/db 64-bit host=502997e1bc4b
+item-app-1  | > docker-software-delivery@1.0.0 start /app
 item-db-1   | 2024-02-26T06:19:23.447+0000 I CONTROL  [initandlisten] db version v3.6.23
+item-app-1  | > node ./bin/www
+item-app-1  | 
 item-db-1   | 2024-02-26T06:19:23.447+0000 I CONTROL  [initandlisten] git version: d352e6a4764659e0d0350ce77279de3c1f243e5c
 item-db-1   | 2024-02-26T06:19:23.447+0000 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2g  1 Mar 2016
 item-db-1   | 2024-02-26T06:19:23.447+0000 I CONTROL  [initandlisten] allocator: tcmalloc
 item-db-1   | 2024-02-26T06:19:23.447+0000 I CONTROL  [initandlisten] modules: none
 item-db-1   | 2024-02-26T06:19:23.447+0000 I CONTROL  [initandlisten] build environment:
-item-app-1  | > docker-software-delivery@1.0.0 preinstall /app
 item-db-1   | 2024-02-26T06:19:23.447+0000 I CONTROL  [initandlisten]     distmod: ubuntu1604
-item-app-1  | > npx npm-force-resolutions
 item-db-1   | 2024-02-26T06:19:23.447+0000 I CONTROL  [initandlisten]     distarch: x86_64
 item-db-1   | 2024-02-26T06:19:23.447+0000 I CONTROL  [initandlisten]     target_arch: x86_64
+item-app-1  | NODE_ENV: production
+item-app-1  | Connected to database
 item-db-1   | 2024-02-26T06:19:23.447+0000 I CONTROL  [initandlisten] options: { net: { bindIpAll: true } }
 item-db-1   | 2024-02-26T06:19:23.447+0000 W -        [initandlisten] Detected unclean shutdown - /data/db/mongod.lock is not empty.
-item-app-1  | 
-item-app-1  | npx: installed 6 in 3.087s
-item-app-1  | audited 665 packages in 16.987s
-item-app-1  | 
-item-app-1  | 12 packages are looking for funding
-item-app-1  |   run `npm fund` for details
-item-app-1  | 
 item-db-1   | 2024-02-26T06:19:23.447+0000 I -        [initandlisten] Detected data files in /data/db created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
 item-db-1   | 2024-02-26T06:19:23.447+0000 W STORAGE  [initandlisten] Recovering data from the last clean checkpoint.
 item-db-1   | 2024-02-26T06:19:23.447+0000 I STORAGE  [initandlisten] 
 item-db-1   | 2024-02-26T06:19:23.447+0000 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
-item-app-1  | found 102 vulnerabilities (7 low, 35 moderate, 49 high, 11 critical)
 item-db-1   | 2024-02-26T06:19:23.447+0000 I STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
-item-app-1  |   run `npm audit fix` to fix them, or `npm audit` for details
-item-app-1  | 
-item-app-1  | > docker-software-delivery@1.0.0 build /app
-item-app-1  | > node ./node_modules/gulp/bin/gulp.js
-item-app-1  | 
 item-db-1   | 2024-02-26T06:19:23.448+0000 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=2940M,cache_overflow=(file_max=0M),session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),compatibility=(release="3.0",require_max="3.0"),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
-item-app-1  | [06:20:33] Using gulpfile /app/gulpfile.js
-item-app-1  | [06:20:33] Starting 'scripts'...
-item-app-1  | [06:20:40] Finished 'scripts' after 6.26 s
 item-db-1   | 2024-02-26T06:19:24.419+0000 I STORAGE  [initandlisten] WiredTiger message [1708928364:419911][1:0x7f5dc95c3a40], txn-recover: Main recovery loop: starting at 4/2944
-item-app-1  | [06:20:40] Starting 'default'...
-item-app-1  | [06:20:40] Finished 'default' after 50 μs
-item-app-1  | 
-item-app-1  | > docker-software-delivery@1.0.0 preinstall /app
-item-app-1  | > npx npm-force-resolutions
-item-app-1  | 
 item-db-1   | 2024-02-26T06:19:24.420+0000 I STORAGE  [initandlisten] WiredTiger message [1708928364:420534][1:0x7f5dc95c3a40], txn-recover: Recovering log 4 through 5
-item-app-1  | npx: installed 6 in 3.548s
-item-app-1  | audited 665 packages in 17.732s
-item-app-1  | 
-item-app-1  | 12 packages are looking for funding
-item-app-1  |   run `npm fund` for details
-item-app-1  | 
-item-app-1  | found 102 vulnerabilities (7 low, 35 moderate, 49 high, 11 critical)
-item-app-1  |   run `npm audit fix` to fix them, or `npm audit` for details
-item-app-1  | 
-item-app-1  | > docker-software-delivery@1.0.0 build /app
-item-app-1  | > node ./node_modules/gulp/bin/gulp.js
-item-app-1  | 
-item-app-1  | [06:21:00] Using gulpfile /app/gulpfile.js
-item-app-1  | [06:21:00] Starting 'scripts'...
 item-db-1   | 2024-02-26T06:19:24.477+0000 I STORAGE  [initandlisten] WiredTiger message [1708928364:477574][1:0x7f5dc95c3a40], file:sizeStorer.wt, txn-recover: Recovering log 5 through 5
 item-db-1   | 2024-02-26T06:19:24.531+0000 I STORAGE  [initandlisten] WiredTiger message [1708928364:531222][1:0x7f5dc95c3a40], file:sizeStorer.wt, txn-recover: Set global recovery timestamp: 0
 item-db-1   | 2024-02-26T06:19:24.564+0000 I CONTROL  [initandlisten] 
@@ -73,3 +40,40 @@ item-db-1   | 2024-02-26T06:19:24.569+0000 I NETWORK  [initandlisten] listening 
 item-db-1   | 2024-02-26T06:19:24.569+0000 I NETWORK  [initandlisten] listening via socket bound to /tmp/mongodb-27017.sock
 item-db-1   | 2024-02-26T06:19:24.569+0000 I NETWORK  [initandlisten] waiting for connections on port 27017
 item-db-1   | 2024-02-26T06:19:25.001+0000 I FTDC     [ftdc] Unclean full-time diagnostic data capture shutdown detected, found interim file, some metrics may have been lost. OK
+item-db-1   | 2024-02-26T07:44:16.743+0000 I CONTROL  [initandlisten] MongoDB starting : pid=1 port=27017 dbpath=/data/db 64-bit host=502997e1bc4b
+item-db-1   | 2024-02-26T07:44:16.748+0000 I CONTROL  [initandlisten] db version v3.6.23
+item-db-1   | 2024-02-26T07:44:16.748+0000 I CONTROL  [initandlisten] git version: d352e6a4764659e0d0350ce77279de3c1f243e5c
+item-db-1   | 2024-02-26T07:44:16.748+0000 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2g  1 Mar 2016
+item-db-1   | 2024-02-26T07:44:16.748+0000 I CONTROL  [initandlisten] allocator: tcmalloc
+item-db-1   | 2024-02-26T07:44:16.748+0000 I CONTROL  [initandlisten] modules: none
+item-db-1   | 2024-02-26T07:44:16.748+0000 I CONTROL  [initandlisten] build environment:
+item-db-1   | 2024-02-26T07:44:16.748+0000 I CONTROL  [initandlisten]     distmod: ubuntu1604
+item-db-1   | 2024-02-26T07:44:16.748+0000 I CONTROL  [initandlisten]     distarch: x86_64
+item-db-1   | 2024-02-26T07:44:16.748+0000 I CONTROL  [initandlisten]     target_arch: x86_64
+item-db-1   | 2024-02-26T07:44:16.748+0000 I CONTROL  [initandlisten] options: { net: { bindIpAll: true } }
+item-db-1   | 2024-02-26T07:44:16.748+0000 W -        [initandlisten] Detected unclean shutdown - /data/db/mongod.lock is not empty.
+item-db-1   | 2024-02-26T07:44:16.749+0000 I -        [initandlisten] Detected data files in /data/db created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+item-db-1   | 2024-02-26T07:44:16.750+0000 W STORAGE  [initandlisten] Recovering data from the last clean checkpoint.
+item-db-1   | 2024-02-26T07:44:16.750+0000 I STORAGE  [initandlisten] 
+item-db-1   | 2024-02-26T07:44:16.750+0000 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+item-db-1   | 2024-02-26T07:44:16.750+0000 I STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
+item-db-1   | 2024-02-26T07:44:16.750+0000 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=2940M,cache_overflow=(file_max=0M),session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),compatibility=(release="3.0",require_max="3.0"),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+item-db-1   | 2024-02-26T07:44:20.012+0000 I STORAGE  [initandlisten] WiredTiger message [1708933460:12302][1:0x7f8bc33fda40], txn-recover: Main recovery loop: starting at 5/4352
+item-db-1   | 2024-02-26T07:44:20.015+0000 I STORAGE  [initandlisten] WiredTiger message [1708933460:15781][1:0x7f8bc33fda40], txn-recover: Recovering log 5 through 6
+item-db-1   | 2024-02-26T07:44:20.209+0000 I STORAGE  [initandlisten] WiredTiger message [1708933460:209321][1:0x7f8bc33fda40], txn-recover: Recovering log 6 through 6
+item-db-1   | 2024-02-26T07:44:20.380+0000 I STORAGE  [initandlisten] WiredTiger message [1708933460:380280][1:0x7f8bc33fda40], txn-recover: Set global recovery timestamp: 0
+item-db-1   | 2024-02-26T07:44:20.509+0000 I CONTROL  [initandlisten] 
+item-db-1   | 2024-02-26T07:44:20.509+0000 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+item-db-1   | 2024-02-26T07:44:20.509+0000 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+item-db-1   | 2024-02-26T07:44:20.509+0000 I CONTROL  [initandlisten] 
+item-db-1   | 2024-02-26T07:44:20.509+0000 I CONTROL  [initandlisten] 
+item-db-1   | 2024-02-26T07:44:20.509+0000 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
+item-db-1   | 2024-02-26T07:44:20.509+0000 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+item-db-1   | 2024-02-26T07:44:20.510+0000 I CONTROL  [initandlisten] 
+item-db-1   | 2024-02-26T07:44:20.550+0000 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/data/db/diagnostic.data'
+item-db-1   | 2024-02-26T07:44:20.551+0000 I NETWORK  [initandlisten] listening via socket bound to 0.0.0.0
+item-db-1   | 2024-02-26T07:44:20.552+0000 I NETWORK  [initandlisten] listening via socket bound to /tmp/mongodb-27017.sock
+item-db-1   | 2024-02-26T07:44:20.552+0000 I NETWORK  [initandlisten] waiting for connections on port 27017
+item-db-1   | 2024-02-26T07:44:21.041+0000 I FTDC     [ftdc] Unclean full-time diagnostic data capture shutdown detected, found interim file, some metrics may have been lost. OK
+item-db-1   | 2024-02-26T07:44:32.078+0000 I NETWORK  [listener] connection accepted from 172.19.0.3:48950 #1 (1 connection now open)
+item-db-1   | 2024-02-26T07:44:32.099+0000 I NETWORK  [conn1] received client metadata from 172.19.0.3:48950 conn1: { driver: { name: "nodejs", version: "2.2.36" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "5.15.133.1-microsoft-standard-WSL2" }, platform: "Node.js v14.21.3, LE, mongodb-core: 2.1.20" }
